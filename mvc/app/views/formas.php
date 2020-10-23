@@ -1,28 +1,28 @@
 <h1>Áreas da figuras geométricas</h1>
 		<fieldset>
 			<legend>Calculo</legend>
-			<form>
+			<form action="<?php echo URL_BASE ."area/calc" ?>" method="POST"> 
 				<label class="col-4">
 					<small>Nome</small>
-					<select>
-						<option>Quadrado</option>
-						<option>Retângulo</option>
-						<option>Triângulo</option>
-						<option>Circulo</option>
+					<select name="figura">
+						<option value="quadrado">Quadrado</option>
+						<option value="retangulo">Retângulo</option>
+						<option value="triangulo">Triângulo</option>
+						<option value="circulo">Circulo</option>
 					</select>
 				</label>
 				
 				<label class="col">
 					<small>Base</small>
-					<input type="text" placeholder="Digite aqui">
+					<input type="text" name="base" placeholder="Digite aqui">
 				</label>
 				<label class="col">
 					<small>Altura</small>
-					<input type="text" placeholder="Digite aqui">
+					<input type="text" name="altura" placeholder="Digite aqui">
 				</label>
 				<label class="col">
 					<small>Raio</small>
-					<input type="text" placeholder="Digite aqui">
+					<input type="text" name="raio" placeholder="Digite aqui">
 				</label>
 				<div class="col-12">
 				<input type="submit" value="calcular">

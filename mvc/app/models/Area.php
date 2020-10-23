@@ -4,12 +4,12 @@ namespace app\models;
 use app\core\Model;
 
 class Area {
-   public function quadrado($lado){
-       return $lado * $lado;
+   public function quadrado($base){
+       return $base * $base;
    }
 
    public function circulo($raio){
-        return pi() * $raio * $raio;
+        return pi() * ($raio * $raio);
    }
 
    public function retangulo($base,$altura){
