@@ -1,7 +1,7 @@
 <?php
 namespace app\controllers;
 use app\core\Controller;
-use app\models\Area;
+use app\models\Area;    
 
 class AreaController extends Controller{
     
@@ -10,7 +10,7 @@ class AreaController extends Controller{
        $this->load("template",$dados);
    }
 
-   public function calc(){
+   public function calcula(){
     $objArea = new Area();
     $area = null;
 
@@ -18,9 +18,6 @@ class AreaController extends Controller{
     $base = $_POST["base"];
     $altura = $_POST["altura"];
     $raio = $_POST["raio"];
-
-    echo $figura;
-    exit;
 
     if($figura=="quadrado"){
         $area = $objArea->quadrado($base);
@@ -33,8 +30,14 @@ class AreaController extends Controller{
     }else{
         $area = 0;
     }
-
-    echo $area;
+    
+    $dados["area"]=$area;
+    $dados["base"]=$base;
+    $dados["figura"]=$figura;
+    $dados["altura"]=$altura;
+    $dados["raio"]=$raio;
+    $dados["view"]="formas";
+    $this->load("template",$dados);
 
    }
    

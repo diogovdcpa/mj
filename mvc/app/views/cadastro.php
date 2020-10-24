@@ -36,5 +36,4 @@
 				</label>
 				<input type="submit" value="Cadastrar">
 			</form>
-			
 		</fieldset>

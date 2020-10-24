@@ -3,8 +3,8 @@
 		<fieldset class="home">
 			<legend>Home</legend>
 			<fieldset class="alt p2">
-				<h4>Olá, jailton</h4>
-				<p>Seja bem vindo a jornada do programador</p>,
+				<h4>Olá, Diogo</h4>
+				<p>Seja bem vindo a jornada do programador</p>
 					<div class="rows">
 						<div class="col-6 p2">
 							<a href="<?php echo URL_BASE ."area" ?>" class="btn">
